@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Extension SenSaaSionnel",
+    "description": "La meilleure extension de la Nuit de l'Info 2025 !",
+    "version": "0.0.0",
+
+    "action": {
+        "default_popup": "src/popup/popup.html",
+        "default_title": "Extension SenSaaSionnel"
+    },
+
+    "background": {
+        "service_worker": "src/background/service-worker.js",
+        "type": "module"
+    },
+
+    "permissions": [],
+    "host_permissions": [],
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["src/content/content-script.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}

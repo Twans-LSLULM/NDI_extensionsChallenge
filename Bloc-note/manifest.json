@@ -1,0 +1,13 @@
+{
+"manifest_version": 3,
+"name": "Je sais pas trop",
+"version": "1.0",
+"description": "Je sais pas non plus",
+"permissions": [
+    "scripting",
+    "activeTab"
+],
+"action": {
+    "default_popup": "Extension.html"
+}
+}

@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Extension SenSaaSionnel",
     "description": "La meilleure extension de la Nuit de l'Info 2025 !",
-    "version": "0.0.0",
+    "version": "1.0.0",
 
     "icons": {
         "16": "src/assets/logo-16.png",

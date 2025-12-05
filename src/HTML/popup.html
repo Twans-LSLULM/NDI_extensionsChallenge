@@ -4,9 +4,9 @@
         <meta charset="UTF-8" />
         <title>Extension SenSaaSionnel</title>
         <link rel="stylesheet" href="../CSS/popup.css" />
-        <link rel="stylesheet" href="../CSS/toDoList.css">
-        <link rel="stylesheet" href="../CSS/blocNote.css">
-        <link rel="stylesheet" href="../CSS/chronometre.css">
+        <link rel="stylesheet" href="../CSS/toDoList.css" />
+        <link rel="stylesheet" href="../CSS/blocNote.css" />
+        <link rel="stylesheet" href="../CSS/chronometre.css" />
     </head>
     <body>
         <main>
@@ -19,7 +19,7 @@
                 aria-labelledby="tab-home"
             >
                 <h2>Accueil</h2>
-                <p>Bienvenue sur votre dashboard</p>
+                <p>Bienvenue sur notre extension SenSaaSionnel.</p>
             </section>
 
             <section
@@ -31,7 +31,11 @@
             >
                 <h2>Bloc notes</h2>
                 <div id="test">
-                    <textarea name="Notepad" id="bloc-note" placeholder="Commencez à entrer vos notes"></textarea>
+                    <textarea
+                        name="Notepad"
+                        id="bloc-note"
+                        placeholder="Commencez à entrer vos notes"
+                    ></textarea>
                 </div>
             </section>
 
@@ -48,8 +52,14 @@
                         <template id="taskTemplate">
                             <li class="toDoItem">
                                 <span class="taskLine">
-                                    <input type="checkbox" name="done" class="toDoCheckbox">
-                                    <label for="toDoCheckbox" class="toDoLabel">Sample Task</label>
+                                    <input
+                                        type="checkbox"
+                                        name="done"
+                                        class="toDoCheckbox"
+                                    />
+                                    <label for="toDoCheckbox" class="toDoLabel"
+                                        >Sample Task</label
+                                    >
                                     <button class="removeTaskButton">X</button>
                                 </span>
                             </li>
@@ -57,7 +67,11 @@
                     </ul>
                 </section>
                 <section id="addTaskSection">
-            <input type="text" id="newTaskInput" placeholder="Ajoutez une nouvelle tâche">
+                    <input
+                        type="text"
+                        id="newTaskInput"
+                        placeholder="Ajoutez une nouvelle tâche"
+                    />
                     <button id="addTaskButton">+</button>
                 </section>
             </section>
@@ -68,19 +82,30 @@
                 role="tabpanel"
                 aria-labelledby="tab-chrono"
             >
-                <h2>Chronomètre</h2>
-                <section id="timerSection"> 
+                <h2>Minuteur</h2>
+                <section id="timerSection">
                     <button id="minusTime" class="timeButton">-</button>
                     <span id="timeDisplay">00:00:00</span>
                     <button id="addTime" class="timeButton">+</button>
                 </section>
                 <section id="launchTimerSection">
-                    <input type="image" src="../../assets/img/pauseTimer.png" alt="" id="pauseButton" class="timerInteractButton">
-                    <input type="image" src="../../assets/img/playTimer.png" alt="" id="startButton" class="timerInteractButton">
+                    <input
+                        type="image"
+                        src="../../assets/img/pauseTimer.png"
+                        alt=""
+                        id="pauseButton"
+                        class="timerInteractButton"
+                    />
+                    <input
+                        type="image"
+                        src="../../assets/img/playTimer.png"
+                        alt=""
+                        id="startButton"
+                        class="timerInteractButton"
+                    />
                     <button id="restartTimer">Reset</button>
                 </section>
             </section>
-
         </main>
         <footer>
             <nav
@@ -126,7 +151,7 @@
                     id="tab-home"
                     tabindex="-1"
                 >
-                    Chronomètre
+                    Minuteur
                 </button>
             </nav>
         </footer>

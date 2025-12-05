@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="toDoList.css">
+</head>
+<body>
+    <section id="toDoSection">
+        <h1>To-Do List</h1>
+        <section id="toDoListContainer">
+            <ul id="toDoList">
+                <li class="toDoItem">
+                    <span class="taskLine">
+                        <input type="checkbox" name="done" class="toDoCheckbox">
+                        <label for="toDoCheckbox">Sample Task</label>
+                        <button class="removeTaskButton">X</button>
+                    </span>
+                </li>
+                <template id="taskTemplate">
+                    <li class="toDoItem">
+                        <span class="taskLine">
+                            <input type="checkbox" name="done" class="toDoCheckbox">
+                            <label for="toDoCheckbox" class="toDoLabel">Sample Task</label>
+                            <button class="removeTaskButton">X</button>
+                        </span>
+                    </li>
+                </template>
+            </ul>
+        </section>
+        <section id="addTaskSection">
+            <input type="text" id="newTaskInput" placeholder="New Task">
+            <button id="addTaskButton">+</button>
+        </section>
+    </section>
+    <script src="toDoList.js"></script>
+</body>
+</html>

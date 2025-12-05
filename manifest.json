@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Extension-NDI-Challenge",
+    "version": "1.0.0",
+    "description": "An extension for managing NDI challenges.",
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ],
+    "action": {
+        "default_popup": "./toDoList/toDoList.html"
+    }
+}

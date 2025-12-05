@@ -1,13 +1,27 @@
 {
     "manifest_version": 3,
-    "name": "Extension-NDI-Challenge",
-    "version": "1.0.0",
-    "description": "An extension for managing NDI challenges.",
-    "permissions": [
-        "scripting",
-        "activeTab"
-    ],
+    "name": "Extension SenSaaSionnel",
+    "description": "La meilleure extension de la Nuit de l'Info 2025 !",
+    "version": "0.0.0",
+
     "action": {
-        "default_popup": "./toDoList/toDoList.html"
-    }
+        "default_popup": "src/popup/popup.html",
+        "default_title": "Extension SenSaaSionnel"
+    },
+
+    "background": {
+        "service_worker": "src/background/service-worker.js",
+        "type": "module"
+    },
+
+    "permissions": [],
+    "host_permissions": [],
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["src/content/content-script.js"],
+            "run_at": "document_idle"
+        }
+    ]
 }

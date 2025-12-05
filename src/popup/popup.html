@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Extension SenSaaSionnel</title>
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+    <body>
+        <main>
+            <h1>Extension SenSaaSionnel</h1>
+
+            <section
+                id="panel-home"
+                class="panel"
+                role="tabpanel"
+                aria-labelledby="tab-home"
+            >
+                <h2>Accueil</h2>
+                <p>Bienvenue sur votre dashboard</p>
+            </section>
+
+            <section
+                id="panel-notes"
+                class="panel"
+                role="tabpanel"
+                aria-labelledby="tab-notes"
+                hidden
+            >
+                <h2>Bloc notes</h2>
+                <div id="test">
+                    <textarea name="Notepad" id="bloc-note" placeholder="Commencez à entrez vos notes"></textarea>
+                </div>
+            </section>
+
+            <section
+                id="panel-todo"
+                class="panel"
+                role="tabpanel"
+                aria-labelledby="tab-todo"
+                hidden
+            >
+                <h2>TODO list</h2>
+                <p>Ici, vous pouvez gérer votre liste de tâches.</p>
+            </section>
+        </main>
+        <footer>
+            <nav
+                class="tabs"
+                role="tablist"
+                aria-label="Navigation de la popup"
+            >
+                <button
+                    class="tab"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="panel-home"
+                    id="tab-home"
+                    tabindex="0"
+                >
+                    Home
+                </button>
+                <button
+                    class="tab"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-notes"
+                    id="tab-notes"
+                    tabindex="-1"
+                >
+                    Bloc-notes
+                </button>
+                <button
+                    class="tab"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-todo"
+                    id="tab-todo"
+                    tabindex="-1"
+                >
+                    TODO list
+                </button>
+            </nav>
+        </footer>
+        <script src="popup.js"></script>
+    </body>
+</html>

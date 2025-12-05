@@ -57,7 +57,7 @@ main {
     display: none !important;
 }
 
-#test {
+#bloc-note-container {
     background: white;
     padding: 15px;
     border-radius: 10px;
@@ -65,15 +65,13 @@ main {
 
 #bloc-note {
     width: 100%;
-    height: 150px;
-    resize: none;
+    height: 220px;
+    resize: vertical;
     border: 2px solid #e0e0e0;
+    box-sizing: border-box;
     outline: none;
     border-radius: 12px !important; /* Force l'application */
-    padding: 10px;
-    background-color: white;
+    padding: 8px;
     font-family: system-ui, -apple-system, sans-serif;
     font-size: 14px;
-    -webkit-appearance: none; /* Supprime les styles par défaut */
-    appearance: none;
 }

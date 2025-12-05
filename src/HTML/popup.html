@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../CSS/popup.css" />
         <link rel="stylesheet" href="../CSS/toDoList.css">
         <link rel="stylesheet" href="../CSS/blocNote.css">
+        <link rel="stylesheet" href="../CSS/chronometre.css">
     </head>
     <body>
         <main>
@@ -60,6 +61,26 @@
                     <button id="addTaskButton">+</button>
                 </section>
             </section>
+
+            <section
+                id="panel-chrono"
+                class="panel"
+                role="tabpanel"
+                aria-labelledby="tab-chrono"
+            >
+                <h2>Chronomètre</h2>
+                <section id="timerSection"> 
+                    <button id="minusTime" class="timeButton">-</button>
+                    <span id="timeDisplay">00:00:00</span>
+                    <button id="addTime" class="timeButton">+</button>
+                </section>
+                <section id="launchTimerSection">
+                    <input type="image" src="../../assets/img/pauseTimer.png" alt="" id="pauseButton" class="timerInteractButton">
+                    <input type="image" src="../../assets/img/playTimer.png" alt="" id="startButton" class="timerInteractButton">
+                    <button id="restartTimer">Reset</button>
+                </section>
+            </section>
+
         </main>
         <footer>
             <nav
@@ -97,9 +118,20 @@
                 >
                     To-Do list
                 </button>
+                <button
+                    class="tab"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-chrono"
+                    id="tab-home"
+                    tabindex="-1"
+                >
+                    Chronomètre
+                </button>
             </nav>
         </footer>
         <script src="../JS/blocNote.js"></script>
         <script src="../JS/toDoList.js"></script>
+        <script src="../JS/chrono.js"></script>
     </body>
 </html>

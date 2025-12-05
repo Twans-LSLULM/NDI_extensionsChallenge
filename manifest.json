@@ -4,6 +4,12 @@
     "description": "La meilleure extension de la Nuit de l'Info 2025 !",
     "version": "0.0.0",
 
+    "icons": {
+        "16": "src/assets/logo-16.png",
+        "48": "src/assets/logo-48.png",
+        "128": "src/assets/logo-128.png"
+    },
+
     "action": {
         "default_popup": "src/popup/popup.html",
         "default_title": "Extension SenSaaSionnel"

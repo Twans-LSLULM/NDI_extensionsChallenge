@@ -1,26 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 /* TASKCONTAINER */
-#toDoSection{
-    border: 2px solid black;
-    width: 400px;
-    height: 500px;
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
-}
-#toDoSection h1{
-    text-align: center;
-    background-color: black;
-    color: white;
-    margin: 0;
-    padding: 10px 0;
-}
+
 #toDoListContainer{
     height: 70%;
     overflow-y: auto;
     padding: 10px;
     box-sizing: border-box;
     width: 100%;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px !important; /* Force l'application */
+
 }
 
 /* TASK LINE */
@@ -60,7 +52,7 @@
     justify-content:space-around;
     align-items: center;
     width: 100%;
-    height: 10%;
+    margin-top: 10px;
 }
 #addTaskButton{
     border-radius: 100%;
@@ -80,4 +72,8 @@
 
 #newTaskInput{
     width: 80%;
+    border-radius: 20px;
+    padding:10px;
+    border: none;
+    background-color: rgb(207, 217, 226);
 }

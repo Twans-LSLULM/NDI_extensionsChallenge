@@ -5,7 +5,7 @@
     "version": "0.0.0",
 
     "action": {
-        "default_popup": "src/popup/popup.html",
+        "default_popup": "src/HTML/popup.html",
         "default_title": "Extension SenSaaSionnel"
     },
 

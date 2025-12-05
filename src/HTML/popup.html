@@ -3,11 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <title>Extension SenSaaSionnel</title>
-        <link rel="stylesheet" href="popup.css" />
+        <link rel="stylesheet" href="../CSS/popup.css" />
+        <link rel="stylesheet" href="../CSS/toDoList.css">
+        <link rel="stylesheet" href="../CSS/blocNote.css">
     </head>
     <body>
         <main>
-            <h1>Extension SenSaaSionnel</h1>
+            <h1 id="popUpName">Extension SenSaaSionnel</h1>
 
             <section
                 id="panel-home"
@@ -28,7 +30,7 @@
             >
                 <h2>Bloc notes</h2>
                 <div id="test">
-                    <textarea name="Notepad" id="bloc-note" placeholder="Commencez à entrez vos notes"></textarea>
+                    <textarea name="Notepad" id="bloc-note" placeholder="Commencez à entrer vos notes"></textarea>
                 </div>
             </section>
 
@@ -39,8 +41,24 @@
                 aria-labelledby="tab-todo"
                 hidden
             >
-                <h2>TODO list</h2>
-                <p>Ici, vous pouvez gérer votre liste de tâches.</p>
+                <h2>To-Do list</h2>
+                <section id="toDoListContainer">
+                    <ul id="toDoList">
+                        <template id="taskTemplate">
+                            <li class="toDoItem">
+                                <span class="taskLine">
+                                    <input type="checkbox" name="done" class="toDoCheckbox">
+                                    <label for="toDoCheckbox" class="toDoLabel">Sample Task</label>
+                                    <button class="removeTaskButton">X</button>
+                                </span>
+                            </li>
+                        </template>
+                    </ul>
+                </section>
+                <section id="addTaskSection">
+            <input type="text" id="newTaskInput" placeholder="Ajoutez une nouvelle tâche">
+                    <button id="addTaskButton">+</button>
+                </section>
             </section>
         </main>
         <footer>
@@ -77,10 +95,11 @@
                     id="tab-todo"
                     tabindex="-1"
                 >
-                    TODO list
+                    To-Do list
                 </button>
             </nav>
         </footer>
-        <script src="popup.js"></script>
+        <script src="../JS/popup.js"></script>
+        <script src="../JS/toDoList.js"></script>
     </body>
 </html>

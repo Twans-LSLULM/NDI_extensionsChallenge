@@ -44,3 +44,17 @@
 
     document.addEventListener("DOMContentLoaded", initTabs);
 })();
+
+document.addEventListener('DOMContentLoaded', () => {
+    const textarea = document.getElementById('bloc-note');
+
+    const contentSave = localStorage.getItem('bloc-note');
+    if (contentSave) {
+        textarea.value = contentSave;
+    }
+
+    textarea.addEventListener('input', () => {
+        localStorage.setItem('bloc-note', textarea.value);
+    });
+
+});
